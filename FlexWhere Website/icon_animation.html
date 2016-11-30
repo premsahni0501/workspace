@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Icon Animation</title>
+
+    <link href="https://file.myfontastic.com/6TksCudshzyiqe7gXhGmwd/icons.css" rel="stylesheet">
+    <style media="screen">
+      body{
+        font-size: 2em;
+      }
+      .icon-bg{
+        margin-top: 120px;
+        margin-left: 100px;
+        display: inline-block;
+        width:50px;
+        height: 50px;
+        position: relative;
+        overflow: hidden;
+        /*text-align: center;*/
+        background-color: #aaa;
+      }
+
+      .icon-bg .icon-home{
+        position: absolute;
+        top: 0;
+        background-color: #3399cc;
+        color:white;
+        cursor: pointer;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        transition: top 0.3s ease-in-out;
+      }
+
+      .icon-bg .icon-search{
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+        position: absolute;
+        top: 100%;
+        background-color: #ed1c24;
+        color:white;
+        transition: top 0.3s ease-in-out;
+      }
+      .icon-bg:hover .icon-search{
+        top:0;
+      }
+      .icon-bg:hover .icon-home{
+        top:-100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icon-bg">
+      <span class="icon icon-home"></span>
+      <span class="icon icon-search"></span>
+    </div>
+  </body>
+</html>

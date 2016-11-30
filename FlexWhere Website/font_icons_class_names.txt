@@ -1,0 +1,5 @@
+search - class="icon-magnifying-glass"
+cross - class="icon-x"
+sidebar - class="icon-list"
+home - class="icon-home"
+info - class="icon-info"
